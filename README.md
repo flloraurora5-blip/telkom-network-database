@@ -28,5 +28,4 @@ SELECT
 FROM operational_budgets b
 LEFT JOIN telkom_assets a ON b.regional_zone = a.regional_zone
 LEFT JOIN maintenance_logs m ON a.asset_id = m.asset_id
-GROUP BY b.regional_zone, b.budget_period, b.allocated_budget, b.technician_payroll;<img width="1590" height="912" alt="Screenshot 2026-06-10 140538" src="https://github.com/user-attachments/assets/3f417fca-ef61-422b-9138-1a87d82c6a56" />
-<img width="1613" height="915" alt="Screenshot 2026-06-10 140228" src="https://github.com/user-attachments/assets/7a3ee840-6df5-41ed-8481-9bf30068e14a" />
+GROUP BY b.regional_zone, b.budget_period, b.allocated_budget, b.technician_payroll;
